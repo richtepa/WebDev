@@ -19,31 +19,34 @@ I use my own little [helper](https://github.com/richtepa/google_assistant-api.ai
 ### features.txt
 In the [features.txt](features.txt) are all different entities for the caniuse-data. These features can be found in the [caniuse/features-json](https://github.com/Fyrd/caniuse/tree/master/features-json) directory.
 
-This .txt (or better .csv) is structured following:
+This [features.txt](features.txt) (or better .csv) is structured following:
 
-** Scheme **
+**Scheme**
 
 <CODE>"FEATURE_NAME_FROM_CANIUSE", "FEATURE_NAME_FROM_CANIUSE", "FEATURE_SYNONYM", "FEATURE_SYNONYM", ...
 "FEATURE_NAME_FROM_CANIUSE", "FEATURE_NAME_FROM_CANIUSE", "FEATURE_SYNONYM", "FEATURE_SYNONYM", ...</CODE>
 
-** Example **
+**Example**
 
 <CODE>"addeventlistener", "addeventlistener", "addeventlisteners", "eventlistener", "eventlisteners", "listener", "listeners"
 "alternate-stylesheet", "alternate-stylesheet", "alternate-stylesheet", "stylesheet", "stylesheets"</CODE>
 
 
-
 ### browsers.txt
 
-This .txt is structured like the features.txt, but uses the browser-names:
+This [browsers.txt](browsers.txt) is structured like the features.txt, but uses the browser-names:
 
-** Scheme **
+**Scheme**
 
 <CODE>"BROWSER_NAME_FROM_CANIUSE", "BROWSER_NAME_FROM_CANIUSE", "BROWSER_SYNONYM", "BROWSER_SYNONYM", ...
 "BROWSER_NAME_FROM_CANIUSE", "BROWSER_NAME_FROM_CANIUSE", "BROWSER_SYNONYM", "BROWSER_SYNONYM", ...</CODE>
 
-** Example **
+**Example**
 
 <CODE>"edge","edge","microsoft edge"
 "ie","ie","internet explorer"</CODE>
+
+
+### privacypolicy.html
+
 
