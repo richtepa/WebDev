@@ -4,3 +4,9 @@ This data is provided by the [caniuse repository](https://github.com/Fyrd/canius
 
 ## Contributing
 Feel free to contribute, for details check the issues.
+
+## The Code
+I use [Dialogflow.com](https://dialgogflow.com) to resolve the user querys.
+
+### Actions on Google Helper
+I use my own little [helper](https://github.com/richtepa/google_assistant-api.ai-php_helper). When an intent is triggered, it executes the function in the [index.php](index.php).
