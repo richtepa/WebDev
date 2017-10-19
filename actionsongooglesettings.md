@@ -29,8 +29,8 @@ _Ok Google,_ Ask Web Dev how many people can use service workers?
 
 _Ok Google,_ Ask Web Dev what is Fetch
 #### Images
-Large Banner (1920 x 1080)
-Small square logo (192 x 192)
+![Large Banner (1920 x 1080)](banner.png)
+![Small square logo (192 x 192)](logo.png)
 ### Additional Information
 #### Category
 Productivity

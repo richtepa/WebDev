@@ -24,11 +24,13 @@ This [features.txt](features.txt) (or better .csv) is structured following:
 **Scheme**
 
 <CODE>"FEATURE_NAME_FROM_CANIUSE", "FEATURE_NAME_FROM_CANIUSE", "FEATURE_SYNONYM", "FEATURE_SYNONYM", ...
+
 "FEATURE_NAME_FROM_CANIUSE", "FEATURE_NAME_FROM_CANIUSE", "FEATURE_SYNONYM", "FEATURE_SYNONYM", ...</CODE>
 
 **Example**
 
 <CODE>"addeventlistener", "addeventlistener", "addeventlisteners", "eventlistener", "eventlisteners", "listener", "listeners"
+
 "alternate-stylesheet", "alternate-stylesheet", "alternate-stylesheet", "stylesheet", "stylesheets"</CODE>
 
 
@@ -39,14 +41,20 @@ This [browsers.txt](browsers.txt) is structured like the features.txt, but uses 
 **Scheme**
 
 <CODE>"BROWSER_NAME_FROM_CANIUSE", "BROWSER_NAME_FROM_CANIUSE", "BROWSER_SYNONYM", "BROWSER_SYNONYM", ...
+
 "BROWSER_NAME_FROM_CANIUSE", "BROWSER_NAME_FROM_CANIUSE", "BROWSER_SYNONYM", "BROWSER_SYNONYM", ...</CODE>
 
 **Example**
 
 <CODE>"edge","edge","microsoft edge"
+
 "ie","ie","internet explorer"</CODE>
 
 
-### privacypolicy.html
+### actionsongooglesettings.md
+I use the data from the [actionsongooglesettings.md](actionsongooglesettings.md) to deploy my app.
 
+
+### privacypolicy.html
+The [privacypolicy.html](privacypolicy.html) is needed for deployment. (Not beautiful but have the information)
 
