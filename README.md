@@ -1,5 +1,5 @@
 # Web Dev
-With [Web Dev](https://assistant.google.com/services/a/id/6e3b4b0d7d1aebde/), users of the Google Assistant can ask for data from [caniuse.com](https://caniuse.com).
+With [Web Dev](https://assistant.google.com/services/a/id/6e3b4b0d7d1aebde/), users of Google Assistant can ask for data from [caniuse.com](https://caniuse.com).
 
 This data is provided by the [caniuse repository](https://github.com/Fyrd/caniuse).
 
@@ -9,11 +9,11 @@ Feel free to contribute (for the directory "helper" visit [this repository](http
 
 
 ## The Code
-I use [Dialogflow.com](https://dialogflow.com) to resolve the user querys.
+I use [Dialogflow.com](https://dialogflow.com) to resolve user querys.
 
 
 ### Actions on Google Helper
-I use my own little [helper](https://github.com/richtepa/google_assistant-api.ai-php_helper). When an intent is triggered, it executes the function in the [index.php](index.php) (after line 18).
+I use my own little [helper](https://github.com/richtepa/google_assistant-api.ai-php_helper). When an intent is triggered, it executes the corresponding function in [index.php](index.php) (after line 18).
 
 
 ### features.txt
@@ -34,7 +34,7 @@ This [features.txt](features.txt) (or better .csv) is structured following:
 
 ### browsers.txt
 
-This [browsers.txt](browsers.txt) is structured like the features.txt, but uses the browser-names:
+This [browsers.txt](browsers.txt) is structured like features.txt, but uses the browser-names:
 
 **Scheme**
 
@@ -48,11 +48,11 @@ This [browsers.txt](browsers.txt) is structured like the features.txt, but uses 
 
 
 ### actionsongooglesettings.md
-I use the data from the [actionsongooglesettings.md](actionsongooglesettings.md) to deploy my app.
+I use the data from [actionsongooglesettings.md](actionsongooglesettings.md) to deploy my app.
 
 
 ### privacypolicy.html
-The [privacypolicy.html](privacypolicy.html) is needed for deployment. (Not beautiful but contains the necessary information)
+[privacypolicy.html](privacypolicy.html) is needed for deployment. (Not beautiful but contains the necessary information)
 
 ### intents
 In the [intents](intents) directory, you can see all the active intents.
