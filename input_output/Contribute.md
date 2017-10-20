@@ -11,7 +11,10 @@
 ### Simple response
 You can help me by making pull requests on GitHub.
 ### Basic Card
-*Title:* Contribution
-*Content:* Fork me on GitHub to make me better.
-*Link-Text:* Web Dev on GitHub
-*Link-URL:* https://github.com/richtepa/WebDev
+**Title:** Contribution
+
+**Content:** Fork me on GitHub to make me better.
+
+**Link-Text:** Web Dev on GitHub
+
+**Link-URL:** https://github.com/richtepa/WebDev
