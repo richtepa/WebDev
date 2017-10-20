@@ -1,4 +1,6 @@
 # Contribute
+## Usage
+Wen the User wants to contribute.
 ## Inputs
 * Can I help you
 * How can I contribute
@@ -6,7 +8,6 @@
 * Can I help you
 * Can I contribute
 * Can I help you to get better
-
 ## Outputs
 ### Simple response
 You can help me by making pull requests on GitHub.
