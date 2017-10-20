@@ -21,53 +21,92 @@ function How_much_Feature(){
 	$feat = $helper["parameters"]["features"];
 	getFeature($feat);
 	
+	// unknown feature
 	if($data["data"][$feat]["usage_perc_y"] == null){
 		if($helper["locale"] == "de-DE"){
 			simple_response("Es tut mir leid, ich kenne dieses Feature nicht.");
 		} else {
 			simple_response("Sorry, I don't know this feature");
 		}
+		
+	// known feature
 	} else {
 		if($helper["locale"] == "de-DE"){
 			simple_response($data["data"][$feat]["usage_perc_y"] . "% der Computer können " . $feat . " nutzen.");
-			simple_response("Kann ich dir noch etwas anderes helfen?");
 		} else {
 			simple_response($data["data"][$feat]["usage_perc_y"] . "% of the computers can use " . $feat);
-			simple_response("Can I help you with something else?");
 		}
 	}
-	/*suggestion_chips([
-		"What is " . $feat,
-		"Which browser use " . $feat
-	]);*/
+	
+	// call-to-action
+	if($helper["locale"] == "de-DE"){
+			simple_response("Kann ich dir noch etwas anderes helfen?");
+	} else {
+			simple_response("Can I help you with something else?");
+	}
 }
 
 //--------------------------------------------------------------------------------------------------
 
 function How_much_Browser(){
 	global $data, $helper;
+	
+	// all browser versions
 	if($helper["parameters"]["number"] == null){
+		
+		// calculating
 		$length = count($data["browsers"]["agents"][$helper["parameters"]["browser"]]["version_list"]);
 		$percent = 0;
 		for($i=0; $i < $length; $i++){
 			$percent += $data["browsers"]["agents"][$helper["parameters"]["browser"]]["version_list"][$i]["global_usage"];
 		}
 		$percent = round($percent);
-		if($helper["locale"] == "de-DE"){
-			simple_response($percent . "% der Welt nutzen " . $helper["parameters"]["browser"]);
-			simple_response("Kann ich dir noch etwas anderes helfen?");
+		
+		// unknown browser
+		if ($percent = 0){
+			if($helper["locale"] == "de-DE"){
+				simple_response("Es tut mir leid, ich kenne diesen Browser nicht.");
+			} else {
+				simple_response("Sorry, I don't know this browser");
+			}
+			
+		// known browser
 		} else {
-			simple_response($percent . "% of the world are using " . $helper["parameters"]["browser"]);
-			simple_response("Can I help you with something else?");
+			if($helper["locale"] == "de-DE"){
+				simple_response($percent . "% der Welt nutzen " . $helper["parameters"]["browser"]);
+				simple_response("Kann ich dir noch etwas anderes helfen?");
+			} else {
+				simple_response($percent . "% of the world are using " . $helper["parameters"]["browser"]);
+				simple_response("Can I help you with something else?");
+			}
 		}
+		
+	// specific browser version
 	} else {
-		if($helper["locale"] == "de-DE"){
-			simple_response(round($data["browsers"]["agents"][$helper["parameters"]["browser"]]["usage_global"][$helper["parameters"]["number"]]) . "% der Welt nutzen " . $helper["parameters"]["browser"] . " " . $helper["parameters"]["number"]);
-			simple_response("Kann ich dir noch etwas anderes helfen?");
+		$percent = $data["browsers"]["agents"][$helper["parameters"]["browser"]]["usage_global"][$helper["parameters"]["number"]];
+		
+		// unknown browser
+		if ($percent = null){
+			if($helper["locale"] == "de-DE"){
+				simple_response("Es tut mir leid, ich kenne diesen Browser nicht.");
+			} else {
+				simple_response("Sorry, I don't know this browser");
+			}
+			
+		// known browser
 		} else {
-			simple_response(round($data["browsers"]["agents"][$helper["parameters"]["browser"]]["usage_global"][$helper["parameters"]["number"]]) . "% of the world are using " . $helper["parameters"]["browser"] . " " . $helper["parameters"]["number"]);
+			if($helper["locale"] == "de-DE"){
+				simple_response(round($percent) . "% der Welt nutzen " . $helper["parameters"]["browser"] . " " . $helper["parameters"]["number"]);
+			} else {
+				simple_response(round($percent) . "% of the world are using " . $helper["parameters"]["browser"] . " " . $helper["parameters"]["number"]);
+			}
+	}
+	
+	// call-to-action
+	if($helper["locale"] == "de-DE"){
+			simple_response("Kann ich dir noch etwas anderes helfen?");
+	} else {
 			simple_response("Can I help you with something else?");
-		}
 	}
 }
 
@@ -75,13 +114,19 @@ function How_much_Browser(){
 
 function Can_I_Use(){
 	global $data, $helper;
+	
+	// actual browser version
 	if($helper["parameters"]["number"] == null){
+		
+		// actual browser version supports feature
 		if(browser($helper["parameters"]["browser"], $helper["parameters"]["features"])){
 			if($helper["locale"] == "de-DE"){
 				simple_response("Ja, du kannst " . $helper["parameters"]["features"] . " in der aktuellen Version von " . $helper["parameters"]["browser"] . " nutzen.");
 			} else {
 				simple_response("Yes, you can use " . $helper["parameters"]["features"] . " in the actual version of " . $helper["parameters"]["browser"]);
 			}
+			
+		// actual browser version doesn't support the feature
 		} else {
 			if($helper["locale"] == "de-DE"){
 				simple_response("Nein, du kannst " . $helper["parameters"]["features"] . " nicht in der aktuellen Version von " . $helper["parameters"]["browser"] . " nutzen.");
@@ -89,13 +134,19 @@ function Can_I_Use(){
 				simple_response("No, you can't use " . $helper["parameters"]["features"] . " in the actual version of " . $helper["parameters"]["browser"]);
 			}
 		}
+	
+	// specific browser version
 	} else {
+		
+		// browser version supports feature
 		if(browser($helper["parameters"]["browser"], $helper["parameters"]["features"], $helper["parameters"]["number"])){
 			if($helper["locale"] == "de-DE"){
 				simple_response("Ja, du kannst " . $helper["parameters"]["features"] . " in " . $helper["parameters"]["browser"] . " " . $helper["parameters"]["number"] . " nutzen.");
 			} else {
 				simple_response("Yes, you can use " . $helper["parameters"]["features"] . " in " . $helper["parameters"]["browser"] . " " . $helper["parameters"]["number"]);
 			}
+			
+		// browser version doesn't support the feature
 		} else {
 			if($helper["locale"] == "de-DE"){
 				simple_response("Nein, du kannst " . $helper["parameters"]["features"] . " in " . $helper["parameters"]["browser"] . " " . $helper["parameters"]["number"] . " nicht nutzen.");
@@ -104,6 +155,8 @@ function Can_I_Use(){
 			}
 		}
 	}
+	
+	// call-to-action
 	if($helper["locale"] == "de-DE"){
 		simple_response("Kann ich dir noch etwas anderes helfen?");
 	} else {
@@ -138,17 +191,26 @@ function Which(){
 	} else {
 		$browsertext = $browserresult[0];
 	}
+	
+	// 
+	if($browsertext == ""){
+		
+	// 
+	} else {
+		if($helper["locale"] == "de-DE"){
+			simple_response("Die neuste Version von " . $browsertext . " können " . $helper["parameters"]["features"] . " nutzen.");
+		} else {
+			simple_response("The newest version of " . $browsertext . " can use " . $helper["parameters"]["features"]);
+		}
+	}
+	
+	
+	// call-to-action
 	if($helper["locale"] == "de-DE"){
-		simple_response("Die neuste Version von " . $browsertext . " können " . $helper["parameters"]["features"] . " nutzen.");
 		simple_response("Kann ich dir noch etwas anderes helfen?");
 	} else {
-		simple_response("The newest version of " . $browsertext . " can use " . $helper["parameters"]["features"]);
 		simple_response("Can I help you with something else?");
 	}
-	/*suggestion_chips([
-		"How much use " . $helper["parameters"]["features"],
-		"What is " . $helper["parameters"]["features"]
-	]);*/
 }
 
 //--------------------------------------------------------------------------------------------------
@@ -170,10 +232,6 @@ function What(){
 			simple_response($data["data"][$helper["parameters"]["features"]]["description"]);
 			simple_response("Can I help you with something else?");
 		}
-		/*suggestion_chips([
-			"How much use " . $helper["parameters"]["features"],
-			"Which browser use " . $helper["parameters"]["features"]
-		]);*/
 	}
 }
 
