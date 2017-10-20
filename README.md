@@ -9,7 +9,7 @@ Feel free to contribute (for the directory "helper" visit [this repository](http
 
 
 ## The Code
-I use [Dialogflow.com](https://dialogflow.com) to resolve user querys.
+I use [Dialogflow.com](https://dialogflow.com) to resolve user queries.
 
 
 ### Actions on Google Helper
