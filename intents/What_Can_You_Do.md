@@ -1,6 +1,6 @@
 # What Can You Do
 ## Usage
-When the user doesn't know, what Web Dev can do.
+When the user doesn't know what Web Dev can do and wants help.
 ## Inputs
 * what can I do
 * what can you do
