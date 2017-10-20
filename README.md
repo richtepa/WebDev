@@ -54,3 +54,5 @@ I use the data from the [actionsongooglesettings.md](actionsongooglesettings.md)
 ### privacypolicy.html
 The [privacypolicy.html](privacypolicy.html) is needed for deployment. (Not beautiful but contains the necessary information)
 
+### intents
+In the [intents](intents) directory, you can see all the active intents.
