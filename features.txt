@@ -169,7 +169,7 @@
 "deviceorientation", "deviceorientation", "device orientation"
 "devicepixelratio", "devicepixelratio", "dpr", "device pixel ratio"
 "dialog", "dialog"
-"dispatchevent", "dispatchevent", "dis patch event", "dipatch event""
+"dispatchevent", "dispatchevent", "dis patch event", "dipatch event"
 "document-currentscript", "document-currentscript", "document current script", "current script"
 "document-evaluate-xpath", "document-evaluate-xpath", "document evaluate xpath", "evaluate xpath"
 "document-execcommand", "document-execcommand", "document execcommand", "execcommand", "exec command"
