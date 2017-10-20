@@ -1,6 +1,6 @@
 # Can_I_Use
 ## Usage
-When the user wants to know if he can use a feature in a specific browser.
+When users wants to know if they are able to use a feature in a specific browser.
 ## Inputs
 * Can I use _payment request_ in _chrome_ _61_
 * Can I use _canvas_ in _chrome_

@@ -15,3 +15,4 @@ When the user doesn't know, what Web Dev can do.
 * Which browser can use es5
 * How many use chrome 61
 * What is gamepad
+* How many devices can use chrome

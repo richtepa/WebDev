@@ -1,6 +1,6 @@
 # Contribute
 ## Usage
-Wen the User wants to contribute.
+When Users wants to contribute.
 ## Inputs
 * Can I help you
 * How can I contribute
