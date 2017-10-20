@@ -17,9 +17,9 @@ I use my own little [helper](https://github.com/richtepa/google_assistant-api.ai
 
 
 ### features.txt
-In the [features.txt](features.txt) are all different entities for the caniuse-data. These features can be found in the [caniuse/features-json](https://github.com/Fyrd/caniuse/tree/master/features-json) directory.
+The [features.txt](features.txt) file contains all different entities for the caniuse-data. These features can be found in the [caniuse/features-json](https://github.com/Fyrd/caniuse/tree/master/features-json) directory.
 
-This [features.txt](features.txt) (or better .csv) is structured following:
+This [features.txt](features.txt) (or better: .csv) is structured the following way:
 
 **Scheme**
 
@@ -34,7 +34,7 @@ This [features.txt](features.txt) (or better .csv) is structured following:
 
 ### browsers.txt
 
-This [browsers.txt](browsers.txt) is structured like features.txt, but uses the browser-names:
+The [browsers.txt](browsers.txt) file is structured like the features.txt file, but uses the browser-names:
 
 **Scheme**
 
@@ -52,7 +52,7 @@ I use the data from [actionsongooglesettings.md](actionsongooglesettings.md) to 
 
 
 ### privacypolicy.html
-[privacypolicy.html](privacypolicy.html) is needed for deployment. (Not beautiful but contains the necessary information)
+[privacypolicy.html](privacypolicy.html) is needed for deployment. (It's not beautiful but contains the necessary information)
 
 ### intents
-In the [intents](intents) directory, you can see all the active intents.
+In the [intents](intents) directory, you can see all of the active intents.
