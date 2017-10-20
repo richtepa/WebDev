@@ -190,7 +190,7 @@ function Which(){
 		if($helper["locale"] == "de-DE"){
 			simple_response("Es tut mir leid, ich kenne dieses Feature nicht.");
 		} else {
-			simple_response("Sorry, I don't know this feature");
+			simple_response("Sorry, I don't know this browser or this feature.");
 		}
 		
 	// unknown feature
@@ -221,7 +221,7 @@ function What(){
 		if($helper["locale"] == "de-DE"){
 			simple_response("Es tut mir leid, ich kenne dieses Feature nicht.");
 		} else {
-			simple_response("Sorry, I don't know this feature");
+			simple_response("Sorry, I don't know this browser or this feature.");
 		}
 	
 	// known feature
