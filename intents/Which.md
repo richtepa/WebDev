@@ -12,3 +12,7 @@ Which() in [index.php](../index.php)
 * The newest version of _chrome and edge_ can use _payment request_.
 ### Simple Response
 * Can I help you with something else?
+
+**On Error:**
+
+* Sorry, I don't know this feature.

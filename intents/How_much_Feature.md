@@ -16,3 +16,8 @@ How_much_Feature() in [index.php](../index.php)
 * _15_% of the computers can use _payment request_.
 ### Simple Response
 * Can I help you with something else?
+
+
+**On Error:**
+
+* Sorry, I don't know this feature.

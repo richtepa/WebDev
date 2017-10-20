@@ -9,13 +9,6 @@ include("helper/google-assistant_api-ai_helper.php");
 
 //--------------------------------------------------------------------------------------------------
 
-function getFeature($feat){
-	global $data;
-	$data["data"][$feat] = json_decode(file_get_contents("https://raw.githubusercontent.com/Fyrd/caniuse/master/features-json/" . $feat . ".json"), true);
-}
-
-//--------------------------------------------------------------------------------------------------
-
 function How_much_Feature(){
 	global $data, $helper;
 	$feat = $helper["parameters"]["features"];
@@ -46,7 +39,7 @@ function How_much_Feature(){
 	}
 }
 
-//--------------------------------------------------------------------------------------------------
+
 
 function How_much_Browser(){
 	global $data, $helper;
@@ -62,15 +55,15 @@ function How_much_Browser(){
 		}
 		$percent = round($percent);
 		
-		// unknown browser
+		// unknown browser or feature
 		if ($percent = 0){
 			if($helper["locale"] == "de-DE"){
-				simple_response("Es tut mir leid, ich kenne diesen Browser nicht.");
+				simple_response("Es tut mir leid, ich kenne diesen Browser oder dieses Feature nicht.");
 			} else {
-				simple_response("Sorry, I don't know this browser");
+				simple_response("Sorry, I don't know this browser or this feature.");
 			}
 			
-		// known browser
+		// known browser and feature
 		} else {
 			if($helper["locale"] == "de-DE"){
 				simple_response($percent . "% der Welt nutzen " . $helper["parameters"]["browser"]);
@@ -85,15 +78,15 @@ function How_much_Browser(){
 	} else {
 		$percent = $data["browsers"]["agents"][$helper["parameters"]["browser"]]["usage_global"][$helper["parameters"]["number"]];
 		
-		// unknown browser
+		// unknown browser or feature
 		if ($percent = null){
 			if($helper["locale"] == "de-DE"){
-				simple_response("Es tut mir leid, ich kenne diesen Browser nicht.");
+				simple_response("Es tut mir leid, ich kenne diesen Browser oder dieses Feature nicht.");
 			} else {
-				simple_response("Sorry, I don't know this browser");
+				simple_response("Sorry, I don't know this browser or this feature.");
 			}
 			
-		// known browser
+		// known browser and feature
 		} else {
 			if($helper["locale"] == "de-DE"){
 				simple_response(round($percent) . "% der Welt nutzen " . $helper["parameters"]["browser"] . " " . $helper["parameters"]["number"]);
@@ -110,7 +103,7 @@ function How_much_Browser(){
 	}
 }
 
-//--------------------------------------------------------------------------------------------------
+
 
 function Can_I_Use(){
 	global $data, $helper;
@@ -164,7 +157,7 @@ function Can_I_Use(){
 	}
 }
 
-//--------------------------------------------------------------------------------------------------
+
 
 function Which(){
 	global $data, $browsers, $helper;
@@ -192,10 +185,15 @@ function Which(){
 		$browsertext = $browserresult[0];
 	}
 	
-	// 
+	// unknown feature
 	if($browsertext == ""){
+		if($helper["locale"] == "de-DE"){
+			simple_response("Es tut mir leid, ich kenne dieses Feature nicht.");
+		} else {
+			simple_response("Sorry, I don't know this feature");
+		}
 		
-	// 
+	// unknown feature
 	} else {
 		if($helper["locale"] == "de-DE"){
 			simple_response("Die neuste Version von " . $browsertext . " können " . $helper["parameters"]["features"] . " nutzen.");
@@ -203,7 +201,6 @@ function Which(){
 			simple_response("The newest version of " . $browsertext . " can use " . $helper["parameters"]["features"]);
 		}
 	}
-	
 	
 	// call-to-action
 	if($helper["locale"] == "de-DE"){
@@ -213,17 +210,21 @@ function Which(){
 	}
 }
 
-//--------------------------------------------------------------------------------------------------
+
 
 function What(){
 	global $data, $helper;
 	getFeature($helper["parameters"]["features"]);
+	
+	// unknown feature
 	if($data["data"][$helper["parameters"]["features"]]["description"] == null){
 		if($helper["locale"] == "de-DE"){
 			simple_response("Es tut mir leid, ich kenne dieses Feature nicht.");
 		} else {
 			simple_response("Sorry, I don't know this feature");
 		}
+	
+	// known feature
 	} else {	
 		if($helper["locale"] == "de-DE"){
 			simple_response("Die Beschreibung gibt es leider nur auf englisch.");
@@ -256,7 +257,10 @@ function browser($browser, $feat, $number){
 		return false;
 	}
 }
-
-function test(){
 	
+	
+	
+function getFeature($feat){
+	global $data;
+	$data["data"][$feat] = json_decode(file_get_contents("https://raw.githubusercontent.com/Fyrd/caniuse/master/features-json/" . $feat . ".json"), true);
 }

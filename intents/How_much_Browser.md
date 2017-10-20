@@ -16,3 +16,7 @@ How_much_Browser() in [index.php](../index.php)
 * _61_% of the world are using _chrome_.
 ### Simple Response
 * Can I help you with something else?
+
+**On Error:**
+
+* Sorry, I don't know this browser or this feature.
