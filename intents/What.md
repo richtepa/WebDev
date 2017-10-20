@@ -2,7 +2,7 @@
 ## Usage
 When the user wants to know what a feature is or can do.
 ## Inputs
-* what is _payment request_
+* what is _payment request_?
 ## Webhook
 What() in [index.php](../index.php)
 ## Outputs
