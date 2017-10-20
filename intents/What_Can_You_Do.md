@@ -9,7 +9,7 @@ When the user doesn't know what Web Dev can do and wants help.
 * help
 ## Outputs
 ### Simple Response
-* I can help you get information about support of different features on the internet. You can ask how many devices or which browsers support a feature. You can also ask about the usage of different browsers and lot more.
+* I can get information about what devices and what browsers support a certain feature. You can also ask about the usage of different browsers and more.
 ### Suggestion Chips
 * How many can use es5
 * Which browser can use es5
