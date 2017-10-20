@@ -1,6 +1,6 @@
 # Bye
 ## Usage
-When the user wants to winish his session with Web Dev. 
+When the user wants to finish their session with Web Dev. 
 ## Inputs
 * Thanks
 * No, thanks
