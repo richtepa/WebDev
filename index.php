@@ -227,7 +227,7 @@ function What(){
 	// known feature
 	} else {	
 		if($helper["locale"] == "de-DE"){
-			simple_response("Die Beschreibung gibt es leider nur auf englisch.");
+			simple_response("Die Beschreibung gibt es leider nur auf Englisch.");
 			simple_response("Kann ich dir noch etwas anderes helfen?");
 		} else {
 			simple_response($data["data"][$helper["parameters"]["features"]]["description"]);
