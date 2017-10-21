@@ -9,7 +9,7 @@ When the user wants to know how many devices use a specific browser.
 * how much people use _chrome_?
 * how much people use _chrome_ _61_?
 ## Webhook
-How_much_Browser() in [index.php](../index.php)
+`How_much_Browser()` in [index.php](../index.php)
 ## Outputs
 ### Simple Response
 * _6_% of the world are using _chrome_ _61_.
