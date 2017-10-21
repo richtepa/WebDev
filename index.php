@@ -79,7 +79,7 @@ function How_much_Browser(){
 		$percent = $data["browsers"]["agents"][$helper["parameters"]["browser"]]["usage_global"][$helper["parameters"]["number"]];
 		
 		// unknown browser or feature
-		if ($percent = null){
+		if ($percent == null){
 			if($helper["locale"] == "de-DE"){
 				simple_response("Es tut mir leid, ich kenne diesen Browser oder dieses Feature nicht.");
 			} else {
