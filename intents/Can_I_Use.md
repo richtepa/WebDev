@@ -2,8 +2,8 @@
 ## Usage
 When the user wants to know if they can use a feature in a specific browser.
 ## Inputs
-* Can I use _payment request_ in _chrome_ _61_
-* Can I use _canvas_ in _chrome_
+* Can I use _payment request_ in _chrome_ _61_?
+* Can I use _canvas_ in _chrome_?
 ## Webhook
 Can_I_Use() in [index.php](../index.php)
 ## Outputs
