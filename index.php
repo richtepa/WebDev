@@ -56,7 +56,7 @@ function How_much_Browser(){
 		$percent = round($percent);
 		
 		// unknown browser or feature
-		if ($percent = 0){
+		if ($percent == 0){
 			if($helper["locale"] == "de-DE"){
 				simple_response("Es tut mir leid, ich kenne diesen Browser oder dieses Feature nicht.");
 			} else {
