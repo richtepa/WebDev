@@ -1,7 +1,8 @@
 # Bye
 ## Usage
 When the user wants to finish their session with Web Dev. 
-## Inputs
+## English
+### Inputs
 * Thanks
 * No, thanks
 * Stop
@@ -10,11 +11,27 @@ When the user wants to finish their session with Web Dev.
 * See you later
 * See you soon
 * See you
-## Outputs
+### Outputs
 * Bye.
 * See you.
 * See you later.
 * See you soon.
 * See you later, aligator.
+
+_ends conversation_
+## German
+### Inputs
+* nein danke
+* nein
+* Nein, danke
+* Tschüss
+* Man sieht sich
+* Bis bald
+* Danke
+* Auf Wiedersehen
+### Outputs
+* Bis bald
+* Tschüss
+* Auf Wiedersehen
 
 _ends conversation_
