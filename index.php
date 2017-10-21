@@ -93,6 +93,7 @@ function How_much_Browser(){
 			} else {
 				simple_response(round($percent) . "% of the world are using " . $helper["parameters"]["browser"] . " " . $helper["parameters"]["number"]);
 			}
+		}
 	}
 	
 	// call-to-action
