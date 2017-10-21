@@ -6,7 +6,7 @@ When the user wants to know which browsers (actual version) can handle a feature
 * which browsers can use _es6_
 * which browsers use _payment request_
 ## Webhook
-Which() in [index.php](../index.php)
+`Which()` in [index.php](../index.php)
 ## Outputs
 ### Simple Response
 * The newest version of _chrome and edge_ can use _payment request_.
