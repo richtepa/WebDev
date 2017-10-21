@@ -24,11 +24,13 @@ This [features.txt](features.txt) (or better: .csv) is structured the following 
 **Scheme**
 
 <CODE>"FEATURE_NAME_FROM_CANIUSE", "FEATURE_NAME_FROM_CANIUSE", "FEATURE_SYNONYM", "FEATURE_SYNONYM", ...
+  
 "FEATURE_NAME_FROM_CANIUSE", "FEATURE_NAME_FROM_CANIUSE", "FEATURE_SYNONYM", "FEATURE_SYNONYM", ...</CODE>
 
 **Example**
 
 <CODE>"addeventlistener", "addeventlistener", "addeventlisteners", "eventlistener", "eventlisteners", "listener", "listeners"
+  
 "alternate-stylesheet", "alternate-stylesheet", "alternate-stylesheet", "stylesheet", "stylesheets"</CODE>
 
 
@@ -39,11 +41,13 @@ The [browsers.txt](browsers.txt) file is structured like the features.txt file, 
 **Scheme**
 
 <CODE>"BROWSER_NAME_FROM_CANIUSE", "BROWSER_NAME_FROM_CANIUSE", "BROWSER_SYNONYM", "BROWSER_SYNONYM", ...
+  
 "BROWSER_NAME_FROM_CANIUSE", "BROWSER_NAME_FROM_CANIUSE", "BROWSER_SYNONYM", "BROWSER_SYNONYM", ...</CODE>
 
 **Example**
 
 <CODE>"edge","edge","microsoft edge"
+  
 "ie","ie","internet explorer"</CODE>
 
 
