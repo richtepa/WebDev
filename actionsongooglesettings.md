@@ -38,9 +38,9 @@ Productivity
 ## German
 
 ### Assistant app Name
-Web Dev
+Web Developer
 #### Pronunciation
-web def
+web developer
 
 ### Details
 #### Assistant app introduction
@@ -48,21 +48,21 @@ _Du kannst mit dieser App_ Informationen über die Nutzung von Features für Web
 #### Assistant app voice
 Male 1
 #### Short description
-Web Dev gibt dir Informationen über die Nutzung von Features für Webentwickler.
+Web Developer gibt dir Informationen über die Nutzung von Features für Webentwickler.
 #### Full description
-Web Dev kann dir helfen Informationen über die Möglichkeit der Nutzung von Features für Webentwickler zu geben. Du kannst zum Beispiel fragen, wie viele Geräte oder welche Browser ein Feature unterstützen. Du kannst auch fragen, wie viele Leute verschiedene Browser benutzen und viel mehr.
+Web Developer kann dir helfen Informationen über die Möglichkeit der Nutzung von Features für Webentwickler zu geben. Du kannst zum Beispiel fragen, wie viele Geräte oder welche Browser ein Feature unterstützen. Du kannst auch fragen, wie viele Leute verschiedene Browser benutzen und viel mehr.
 
 Quelle aller Daten: caniuse.com
 #### Sample invocations
-_Ok Google,_ Mit Web Dev sprechen
+_Ok Google,_ Mit Web Developer sprechen
 
-_Ok Google,_ Frag Web Dev wie viele Leute payment request nutzen können.
+_Ok Google,_ Frag Web Developer wie viele Leute payment request nutzen können.
 
-_Ok Google,_ Frage Web Dev wie viele Geräte Chrome 61 haben.
+_Ok Google,_ Frage Web Developer wie viele Geräte Chrome 61 haben.
 
-_Ok Google,_ Frage Web Dev ob ich payment request in chrome nutzen kann.
+_Ok Google,_ Frage Web Developer ob ich payment request in chrome nutzen kann.
 
-_Ok Google,_ Frage Web Dev wie viele Leute service worker nutzen können.
+_Ok Google,_ Frage Web Developer wie viele Leute service worker nutzen können.
 #### Images
 ![Large Banner (1920 x 1080)](banner.png)
 ![Small square logo (192 x 192)](logo.png)
