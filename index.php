@@ -112,20 +112,20 @@ function Can_I_Use(){
 	// actual browser version
 	if($helper["parameters"]["number"] == null){
 		
-		// actual browser version supports feature
+		// latest browser version supports feature
 		if(browser($helper["parameters"]["browser"], $helper["parameters"]["features"])){
 			if($helper["locale"] == "de-DE"){
 				simple_response("Ja, du kannst " . $helper["parameters"]["features"] . " in der aktuellen Version von " . $helper["parameters"]["browser"] . " nutzen.");
 			} else {
-				simple_response("Yes, you can use " . $helper["parameters"]["features"] . " in the actual version of " . $helper["parameters"]["browser"]);
+				simple_response("Yes, you can use " . $helper["parameters"]["features"] . " in the latest version of " . $helper["parameters"]["browser"]);
 			}
 			
-		// actual browser version doesn't support the feature
+		// latest browser version doesn't support the feature
 		} else {
 			if($helper["locale"] == "de-DE"){
 				simple_response("Nein, du kannst " . $helper["parameters"]["features"] . " nicht in der aktuellen Version von " . $helper["parameters"]["browser"] . " nutzen.");
 			} else {
-				simple_response("No, you can't use " . $helper["parameters"]["features"] . " in the actual version of " . $helper["parameters"]["browser"]);
+				simple_response("No, you can't use " . $helper["parameters"]["features"] . " in the latest version of " . $helper["parameters"]["browser"]);
 			}
 		}
 	
