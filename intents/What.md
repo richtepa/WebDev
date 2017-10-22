@@ -7,7 +7,7 @@ When the user wants to know what a feature is or can do.
 ### Inputs
 * what is _payment request_?
 * what is _css grid layout_?
-* what IS _hevc_?
+* what is _hevc_?
 ### Outputs
 #### Simple Response
 * _Payment Request is a new API for the open web that makes checkout flows easier, faster and consistent on shopping sites._
