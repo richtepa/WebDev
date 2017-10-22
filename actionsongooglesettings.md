@@ -56,7 +56,7 @@ Quelle aller Daten: caniuse.com
 #### Sample invocations
 _Ok Google,_ Mit Web Developer sprechen.
 
-_Ok Google,_ Rede mit Web Developer über wie viele Leute payment request nutzen können.
+_Ok Google,_ mit Web Developer über wie viele Leute payment request nutzen können sprechen.
 
 _Ok Google,_ Rede mit Web Developer über wie viele Geräte Chrome 61 haben.
 
