@@ -51,6 +51,7 @@ Male 1
 Web Developer gibt dir Informationen über die Nutzung von Features für Webentwickler.
 #### Full description
 Web Developer kann dir helfen Informationen über die Möglichkeit der Nutzung von Features für Webentwickler zu geben. Du kannst zum Beispiel fragen, wie viele Geräte oder welche Browser ein Feature unterstützen. Du kannst auch fragen, wie viele Leute verschiedene Browser benutzen und viel mehr.
+Ich empfehle die englische Benennung der Features (z.B. payment request / box shadow) zu nutzen.
 
 Quelle aller Daten: caniuse.com
 #### Sample invocations
