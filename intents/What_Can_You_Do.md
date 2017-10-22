@@ -27,5 +27,5 @@ When the user doesn't know what Web Dev can do and wants help.
 * Ich kann dir helfen Informationen über die Möglichkeit der Nutzung von Features für Webentwickler zu geben. Du kannst zum Beispiel fragen, wie viele Geräte oder welche Browser ein Feature unterstützen. Du kannst auch fragen, wie viele Leute verschiedene Browser benutzen und viel mehr.
 #### Suggestion Chips
 * Wie viele nutzen es5
-* Welche Browser können es6
+* Welche Browser können es5
 * Wie viele nutzen Chrome

@@ -9,8 +9,6 @@ When the user wants to know how many devices use a specific browser.
 * how many people use _chrome_ _61_?
 * how many people use _firefox_?
 * how many devices use _chrome_ _61_?
-* how many people use _chrome_?
-* how many people use _chrome_ _61_?
 ### Outputs
 #### Simple Response
 * _6_% of the world is using _chrome_ _61_.

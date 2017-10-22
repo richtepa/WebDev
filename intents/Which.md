@@ -20,8 +20,8 @@ When the user wants to know which browsers (actual version) can handle a feature
 ## German
 ### Inputs
 * welche Broser nutzen _canvas_?
-* welcher Browser kann _es6_?
-* welche Browser können _es6_?
+* welcher Browser kann _es5_?
+* welche Browser können _es5_?
 * Welcher Browser kann _payment request_ nutzen?
 ### Outputs
 #### Simple Response

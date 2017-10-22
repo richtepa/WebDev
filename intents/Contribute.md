@@ -3,7 +3,6 @@
 When the User wants to know how to contribute.
 ## English
 ### Inputs
-* Can I help you?
 * How can I contribute?
 * How can I help you?
 * Can I help you?
@@ -30,8 +29,8 @@ Du kannst mir helfen, indem du pull-requests auf GitHub machst.
 #### Basic Card
 **Title:** Contribution
 
-**Content:** Fork me on GitHub to make me better.
+**Content:** Besuch mich auf GitHub.
 
-**Link-Text:** Web Dev on GitHub
+**Link-Text:** Web Developer auf GitHub
 
 **Link-URL:** https://github.com/richtepa/WebDev

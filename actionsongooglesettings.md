@@ -19,7 +19,7 @@ With Web Dev you can get information about support of different features on the 
 
 Source of all data: caniuse.com
 #### Sample invocations
-_Ok Google,_ Talk to Web Dev
+_Ok Google,_ Talk to Web Dev.
 
 _Ok Google,_ Talk to Web Dev about can I use payment request in chrome?
 
@@ -27,7 +27,7 @@ _Ok Google,_ Talk to Web Dev about how many devices use chrome 61?
 
 _Ok Google,_ Ask Web Dev how many people can use service workers?
 
-_Ok Google,_ Ask Web Dev what is Fetch
+_Ok Google,_ Ask Web Dev what is fetch?
 #### Images
 ![Large Banner (1920 x 1080)](banner.png)
 ![Small square logo (192 x 192)](logo.png)
@@ -57,7 +57,7 @@ Quelle aller Daten: caniuse.com
 #### Sample invocations
 _Ok Google,_ Mit Web Developer sprechen.
 
-_Ok Google,_ mit Web Developer über wie viele Leute payment request nutzen können sprechen.
+_Ok Google,_ Mit Web Developer über wie viele Leute payment request nutzen können sprechen.
 
 _Ok Google,_ Rede mit Web Developer über wie viele Geräte Chrome 61 haben.
 

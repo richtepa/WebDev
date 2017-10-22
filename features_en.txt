@@ -367,7 +367,7 @@
 "scrollintoviewifneeded", "scrollintoviewifneeded", "scroll into view if needed"
 "sdch", "sdch"
 "selection-api", "selection-api", "selection", "selection api"
-"serviceworkers", "serviceworkers", "service worker", "service workers"
+"serviceworkers", "serviceworkers", "service worker", "service workers", "service worker"
 "setimmediate", "setimmediate", "set immediate"
 "sha-2", "sha-2", "sha 2"
 "shadowdom", "shadowdom", "shadow dom"
