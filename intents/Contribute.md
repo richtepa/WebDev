@@ -2,7 +2,6 @@
 ## Usage
 When the User wants to know how to contribute.
 ## English
-## German
 ### Inputs
 * Can I help you?
 * How can I contribute?
