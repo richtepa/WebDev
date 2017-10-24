@@ -3,6 +3,7 @@
 When the user doesn't know what Web Dev can do and wants help.
 ## English
 ### Inputs
+* commands
 * what can I do?
 * what can you do?
 * what are you for?
@@ -18,6 +19,8 @@ When the user doesn't know what Web Dev can do and wants help.
 * What is gamepad
 ## German
 ### Inputs
+* befehle
+* kommandos
 * was kann ich?
 * was kannst du?
 * ich brauche hilfe
