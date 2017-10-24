@@ -2,8 +2,7 @@
 //TODO:
 //IT
 $browsers = array("chrome", "firefox", "ie", "edge", "safari", "opera");
-$data["browsers"] = json_decode(file_get_contents("https://raw.githubusercontent.com/Fyrd/caniuse/master/fulldata-json/data-2.0.json"), true);
-$helper_config["log"] = true;
+$helper_config["log"] = false;
 $helper_config["intent-function"] = true;
 include("helper/google-assistant_api-ai_helper.php");
 
@@ -43,15 +42,22 @@ function How_much_Feature(){
 
 function How_much_Browser(){
 	global $data, $helper;
+	$data["browsers"] = json_decode(file_get_contents("browsers.json"), true);
+	
+	$words = explode(" ", $helper["query"]);
+	if(in_array("newest", $words) || in_array("actual", $words) || in_array("latest", $words) || in_array("neusten", $words) || in_array("aktuellste", $words)){
+		$helper["parameters"]["number"] = $data["browsers"][$helper["parameters"]["browser"]]["current_version"];
+	}
 	
 	// all browser versions
 	if($helper["parameters"]["number"] == null){
 		
+		
 		// calculating
-		$length = count($data["browsers"]["agents"][$helper["parameters"]["browser"]]["version_list"]);
+		$length = count($data["browsers"][$helper["parameters"]["browser"]]["version_list"]);
 		$percent = 0;
 		for($i=0; $i < $length; $i++){
-			$percent += $data["browsers"]["agents"][$helper["parameters"]["browser"]]["version_list"][$i]["global_usage"];
+			$percent += $data["browsers"][$helper["parameters"]["browser"]]["version_list"][$i]["global_usage"];
 		}
 		$percent = round($percent);
 		
@@ -76,7 +82,7 @@ function How_much_Browser(){
 		
 	// specific browser version
 	} else {
-		$percent = $data["browsers"]["agents"][$helper["parameters"]["browser"]]["usage_global"][$helper["parameters"]["number"]];
+		$percent = $data["browsers"][$helper["parameters"]["browser"]]["usage_global"][$helper["parameters"]["number"]];
 		
 		// unknown browser or feature
 		if ($percent == null){
@@ -97,6 +103,23 @@ function How_much_Browser(){
 	}
 	
 	// call-to-action
+	if($helper["locale"] == "de-DE"){
+			simple_response("Kann ich dir noch etwas anderes helfen?");
+	} else {
+			simple_response("Can I help you with something else?");
+	}
+}
+
+
+
+function newest_version(){
+	global $data, $helper;
+	$data["browsers"] = json_decode(file_get_contents("browsers.json"), true);
+	if($helper["locale"] == "de-DE"){
+		simple_response( $helper["parameters"]["browser"] . " ist aktuell in Version " . $data["browsers"][$helper["parameters"]["browser"]]["current_version"]);
+	} else {
+		simple_response( $helper["parameters"]["browser"] . " is actually in version " . $data["browsers"][$helper["parameters"]["browser"]]["current_version"]);
+	}
 	if($helper["locale"] == "de-DE"){
 			simple_response("Kann ich dir noch etwas anderes helfen?");
 	} else {
@@ -242,8 +265,9 @@ function What(){
 function browser($browser, $feat, $number){
 	global $data, $helper;
 	getFeature($feat);
+	$data["browsers"] = json_decode(file_get_contents("browsers.json"), true);
 	if($number == null){
-		$number = $data["browsers"]["agents"][$browser]["current_version"];
+		$number = $data["browsers"][$browser]["current_version"];
 	}
 	$raw = $data["data"][$feat]["stats"][$browser][$number];
 	$split = explode("", $raw);

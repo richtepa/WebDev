@@ -8,6 +8,7 @@ When the user wants to know how many devices use a specific browser.
 * how many devices use _edge_ _11_?
 * how many people use _chrome_ _61_?
 * how many people use _firefox_?
+* how many people use the actual verion of _firefox_?
 * how many devices use _chrome_ _61_?
 ### Outputs
 #### Simple Response
@@ -25,6 +26,7 @@ When the user wants to know how many devices use a specific browser.
 * wie viele nutzen _chrome_ _61_?
 * wie viele Computer haben _safari_?
 * wie viele Leute nutzen _chrome_?
+* wie viele Leute nutzen die aktuelle Version von _chrome_?
 * wie viele Geräte nutzen _firefox_?
 ### Outputs
 #### Simple Response
