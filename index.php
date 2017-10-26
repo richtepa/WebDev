@@ -6,9 +6,10 @@ $helper_config["log"] = false;
 $helper_config["intent-function"] = true;
 include("helper/google-assistant_api-ai_helper.php");
 
-$analytics = PHP_EOL . '"' . time() . '","' . $helper["timestamp"] . '","' . $helper["userID"] . '","' . $helper["conversationId"] . '","' . $helper["locale"] . '","' . $helper["method"] . '","' . $helper["audio"] . '","' . $helper["screen"] . '","' . $helper["query"] . '","' .  $helper["intent"] . '","' . $helper["parameters"]["browser"] . '","' .$helper["parameters"]["features"] . '","' . $helper["parameters"]["number"] . '"';
+$before = file_get_contents("newanalytics.txt");
+$analytics = PHP_EOL . '"' . time() . '","' . $helper["timestamp"] . '","' . $helper["userId"] . '","' . $helper["conversationId"] . '","' . $helper["locale"] . '","' . $helper["method"] . '","' . $helper["audio"] . '","' . $helper["screen"] . '","' . $helper["query"] . '","' .  $helper["intent"] . '","' . $helper["parameters"]["browser"] . '","' .$helper["parameters"]["features"] . '","' . $helper["parameters"]["number"] . '"';
 $fna = fopen('newanalytics.txt', 'w');
-fwrite($fna,$analytics);
+fwrite($fna,$before . $analytics);
 fclose($fna);
 
 //--------------------------------------------------------------------------------------------------

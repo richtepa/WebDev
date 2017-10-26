@@ -11,7 +11,7 @@ $before = file_get_contents("analytics.txt");
 $after = file_get_contents("newanalytics.txt");
 
 $fa = fopen('analytics.txt', 'w');
-fwrite($fa,$before . PHP_EOL . $after);
+fwrite($fa,$before . $after);
 fclose($fa);
 
 $fna = fopen('newanalytics.txt', 'w');
