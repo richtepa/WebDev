@@ -1,0 +1,8 @@
+<Files newanalytics.txt>
+  order allow,deny
+  Deny from all
+</Files>
+<Files analytics.txt>
+  order allow,deny
+  Deny from all
+</Files>

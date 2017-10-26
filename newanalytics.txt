@@ -1,0 +1,1 @@
+"time","timestamp","userID","conversationId","locale","method","audio","screen","query","intent","parameter-browser","parameter-features","parameter-number"
